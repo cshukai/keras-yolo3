@@ -16,6 +16,7 @@ import tensorflow as tf
 import keras
 from keras.models import load_model
 
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True)) # testing if gpu is accessible
 def create_training_instances(
     train_annot_folder,
     train_image_folder,
